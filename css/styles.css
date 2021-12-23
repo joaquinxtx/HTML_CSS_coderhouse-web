@@ -375,6 +375,11 @@ header{
     background: #ffffff;
     color:black;
 }
+/* soporte */
+.card{
+    margin-right: 10px;
+}
+
 
 /* responsive */
 @media screen and (max-width:800px){
