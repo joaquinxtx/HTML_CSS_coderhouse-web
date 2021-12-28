@@ -54,11 +54,20 @@ header{
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 35px;
-    box-shadow:0 0 20px 0 rgba(138, 18, 236, 0.658) ;
+    box-shadow:0 0 20px 0 rgba(138, 18, 236, 0.5) ;
     text-align: center;
     padding: 20px;
     
+
 }
+.sub-titulo:hover{
+    transition: 1s;
+    cursor: pointer;
+    background: rgba(204, 0, 255, 0.425);
+    box-shadow:0 0 20px rgba(192, 0, 48, 0.575) ;
+    font-weight: 700;
+}
+
 .pie{
     font-family: 'Dancing Script', cursive;
 }
@@ -98,6 +107,13 @@ header{
     background: #4645449d;
     border: 2px solid rgb(121, 12, 211);
 }
+.sobre-mi__textos:hover{
+    transform: scale(1,1.1);
+    transition: 1s;
+    box-shadow:0 0 20px rgba(192, 0, 48, 0.575) ;
+
+
+}
 .sobre-mi__textos h3 span{
     background: rgb(121, 12, 211);
     color: rgb(252, 252, 252);
@@ -115,7 +131,7 @@ header{
 .proyecto__grid{
     display: grid;
     height: 550px;
-    grid-template-areas: 
+    grid-template-areas:
     "proyecto-1 proyecto-1 proyecto-2 proyecto-3"
     "proyecto-1 proyecto-1 proyecto4 proyecto-6";
     gap: 10px;
@@ -125,7 +141,7 @@ header{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    
+
 }
 .proyecto__img{
     width: 100%;
@@ -169,15 +185,14 @@ header{
 
 }
 
-/* Tecnologia intex */
+/* Tecnologia index */
 .tecnologias{
-    min-width: 400px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 80px;
     justify-items: center;
     align-items: center;
-    
+
 }
 .titulos_tech{
     color: rgb(121, 12, 211) ;
@@ -201,31 +216,78 @@ header{
 }
 
 /* que dicen mis clientes */
+.recomendaciones__grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.recomendaciones__item{
+    width: 95%;
+    margin: 0 auto;
+    background:  rgba(121, 12, 211, 0.452);
+    box-shadow: 0 8px 10px rgba(211, 12, 145, 0.452);
+    border-radius: 7px;
+    padding: 30px 25px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+.recomendaciones__item:hover{
+    transform: scale(1,1.1);
+    transition: 1s;
+    box-shadow: 0 8px 10px rgba(121, 12, 211, 0.452);
+    background:rgba(211, 12, 145, 0.452) ;
 
-.cards{
-    display: flex;
-    justify-content: space-evenly;
 }
-.cards .card{
-    background: rgba(140, 49, 214, 0.719);
+.recomendaciones__persona{
     display: flex;
-    width: 46%;
-    height: 200px;
     align-items: center;
-    justify-content:space-evenly ;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0 , 0 , 0 , 0.6);
+    margin-bottom: 20px;
 }
-.cards .card img{
+.recomendaciones__img{
     width: 100px;
+    min-width: 100px;
     height: 100px;
     object-fit: cover;
-    border: 3px solid rgb(0, 0, 0);
+    object-position: top;
     border-radius: 50%;
-    display: block;
+    border: 3px solid #ffffff;
+    margin-right: 30px;
 }
-.cards .card > .contenido-texo-card{
-    width: 60%;
+.recomendaciones__nombre{
+    color: #ebe99f;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.recomendaciones__verificacion{
+    color: #cfc7c7;
+    font-weight: 700;
+}
+.recomendaciones__review{
+    font-weight: 300;
+}
+/* footer */
+footer{
+    border-top: 1px solid rgb(121, 12, 211) ;
+    background:rgba(121, 12, 211, 0.644) ;
+
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__items{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: inherit;
+}
+.footer__items:hover{
+    transition: 0.9s;
+    color: rgba(216, 213, 214, 0.952);
+    font-size: 2.2rem;
+    border-bottom: 1px solid rgb(174, 173, 175);;
+
 }
 /* servicios */
 .contenedor-servicios{
@@ -264,7 +326,7 @@ header{
     height:16em;
 }
 .contacto-form{
-    box-shadow:0 0 20px 0 rgba(138, 18, 236, 0.432) ;   
+    box-shadow:0 0 20px 0 rgba(138, 18, 236, 0.432) ;
 }
 .contacto-form > *{
     padding: 1em;
@@ -275,10 +337,10 @@ header{
     margin-top: 0;
     margin-bottom: 20px;
     background-color: rgb(59, 59, 59);
-    box-shadow:0 0 20px 0 rgba(138, 18, 236, 0.432) ;   
-    
-    
-} 
+    box-shadow:0 0 20px 0 rgba(138, 18, 236, 0.432) ;
+
+
+}
 .contacto__titulo span{
     color: rgb(121, 12, 211);
 }
@@ -292,7 +354,7 @@ header{
 }
 
 
-.formulario > p {  
+.formulario > p {
     margin:0 ;
     padding: 1em;
 }
@@ -317,6 +379,28 @@ header{
 .contacto-form__formulario form button:hover,
 .contacto-form__formulario form button:focus{
     background-color: rgb(99, 0, 192);
+    color: cornsilk;
+}
+/* servicios card y acordeon bootstrap */
+.card{
+    background:  rgba(99, 0, 192, 0.575);
+    box-shadow: 0 8px 10px rgba(211, 12, 145, 0.452);
+    cursor:pointer;
+}
+.card:hover{
+    transition: 0.7s;
+    background:rgba(192, 0, 48, 0.575) ;
+    box-shadow: 0 8px 10px rgba(120, 8, 224, 0.719);
+}
+.accordion-body{
+    background: rgba(119, 14, 216, 0.637) ;
+}
+.accordion-item{
+    background:rgba(79, 3, 150, 0.932);
+
+}
+.accordion-button{
+    background:rgba(79, 3, 150, 0.932);
     color: cornsilk;
 }
 
@@ -359,7 +443,7 @@ header{
     margin: auto;
     column-gap: 10px;
     row-gap: 10px;
-   
+
 }
 .grid__img{
     width: 100%;
@@ -405,7 +489,7 @@ header{
     .contenedor__sobre-mi{
         flex-direction: column;
         display: flex;
-        margin: 20px;
+        margin: 0;
         width: 100%;
         align-items: center;
     }
@@ -424,22 +508,17 @@ header{
     .img__tech--left{
         text-align: center;
     }
-    /* .tech__textos{
-        grid-row: 3/4;
-    } */
 
     /* que dicen mis clientes */
-    .cards{
-        display: flex;
+    .recomendaciones__grid{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    /* footer */
+    .footer{
         flex-direction: column;
-        align-items: center;
     }
-    .cards .card{
-        width: 90%;
-    }
-    .cards .card:first-child{
-        margin-bottom: 30px;
-    }
+
 
 
     /* servicios */
@@ -450,7 +529,7 @@ header{
     }
     .servicios .contenidos-textos{
         width: 93%;
-        
+
     }
     .img__servicios{
         width: 93%
@@ -465,12 +544,12 @@ header{
     /* contactarme */
     .contacto-form{
         display: grid;
-        grid-template-rows: 1fr 2fr;    
-    } 
+        grid-template-rows: 1fr 2fr;
+    }
     .contacto-form__icono{
         display:flex;
         width: 18em;
-        height:18em; 
+        height:18em;
         justify-content: center;
         align-items: center;
     }
@@ -488,5 +567,17 @@ header{
      flex-direction: column;
      row-gap: 10px;
     }
-    
+
+}
+
+/* resposive movile */
+@media screen and (max-width:435px){
+    nav{
+        height: 100px;
+    }
+    .contenedor{
+        padding: 20px;
+    }
+
+
 }

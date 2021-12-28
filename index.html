@@ -15,10 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    
-
 </head>
-
 
 <body>
     <header class="hero">      
@@ -31,8 +28,8 @@
         </nav>
         <div class="titulo">   
             <h1 class="animate__animated animate__backInRight">
-                Joaquin Dev
-            </h1>
+                Joaquin Dev 🖥
+            </h1> 
             <h2 class="titulo">
                 Desarrollo Web
             </h2>       
@@ -154,62 +151,72 @@
 
 
         <section class="contenedor recomendaciones">
-            <h2 class="sub-titulo">Que dicen mis clientes</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="img/persona.jpg" alt="persona" >
-                    <div class="contenido-texo-card">
-                        <h4>Name</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, saepe!</p>
+            <h2 class="sub-titulo">clientes</h2>
+            <div class="recomendaciones__grid">
+                <article class="recomendaciones__item">
+                    <div class="recomendaciones__persona">
+                        <img src="img/persona.jpg" alt="persona" class="recomendaciones__img">
+                        <div class="recomendaciones__texto">
+                            <h3 class="recomendaciones__nombre">Pablo Herrera</h3>
+                            <p class="recomendaciones__verificacion">Empresa</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <img src="img/persona-2.jpg" alt="persona">
-                    <div class="contenido-texo-card">
-                        <h4>Name</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, saepe!</p>
+                    <p class="recomendaciones__review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi aperiam praesentium voluptatibus quasi laboriosam nesciunt nobis doloremque, consectetur provident cupiditate.</p>
+                </article>
+                <article class="recomendaciones__item">
+                    <div class="recomendaciones__persona">
+                        <img src="img/persona-2.jpg" alt="persona" class="recomendaciones__img">
+                        <div class="recomendaciones__texto">
+                            <h3 class="recomendaciones__nombre">Agustina Acuña</h3>
+                            <p class="recomendaciones__verificacion">Jefa de Marketing</p>
+                        </div>
                     </div>
-                </div>
-            </div>    
+                    <p class="recomendaciones__review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi aperiam praesentium voluptatibus quasi laboriosam nesciunt nobis doloremque, consectetur provident cupiditate.</p>
+                </article>
+            </div>          
         </section>
         <section class="contenedor">
-            <h2 class="sub-titulo">Soporte</h2>
-            <div class="card-group">
-                <div class="card">
-                  <img src="img/bostrap-img-1.jpg" class="card-img-top" alt="img-soporte">
-                  <div class="card-body">
+            <h2 class="sub-titulo">Servicios</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                <div class="card h-100">
+                    <img src="img/servicios-it-1.jpg" class="card-img-top" alt="servicios">
+                    <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
                 </div>
-                <div class="card">
-                  <img src="img/bostrap-img-2.jpg" class="card-img-top" alt="img-soporte">
-                  <div class="card-body">
+                </div>
+                <div class="col">
+                <div class="card h-100">
+                    <img src="img/servicios-it-2.jpg" class="card-img-top" alt="servicios">
+                    <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
+                    <p class="card-text">This is a short card.</p>
+                    </div>
                 </div>
-                <div class="card">
-                  <img src="img/bostrap-img-3.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
+                </div>
+                <div class="col">
+                <div class="card h-100">
+                    <img src="img/servicios-it-3.jpg" class="card-img-top" alt="servicios">
+                    <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
                 </div>
-              </div>
+                </div>
+            </div>
         </section>
     </main>
 
 
     <footer>
-       <div class="contenedor contactos">       
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Gmail</a>
-            <a href="#">Linkedin</a>    
+       <div class="contenedor footer">       
+            <a class="footer__items" href="#">Instagram</a>
+            <a class="footer__items" href="#">Facebook</a>
+            <a class="footer__items" href="#">Gmail</a>
+            <a class="footer__items" href="#">Linkedin</a>
+            <a class="footer__items" href="#">GitHub</a>    
        </div>
        <p class="pie">Joaquin dev | Joaquin toledo </p>
     </footer>
