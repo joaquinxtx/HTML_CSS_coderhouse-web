@@ -1,0 +1,215 @@
+main{
+     // index
+     .contenedor{
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 80px;
+        max-width: 1200px;
+        .sub-titulo{
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 35px;
+            box-shadow: 0 0 20px 0 $color-pricipal;
+            text-align: center;
+            padding: 20px;
+            &:hover{
+                transition: 1s;
+                cursor: pointer;
+                background: $hover-subtitulo;
+                box-shadow:0 0 20px $backgound-rojo ;
+                font-weight: 700;
+                }
+        }
+        .sobre-mi{
+            margin-top: 15px;
+            text-align: center;
+            .sobre-mi__img{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-bottom: 10px;
+                object-fit: cover;
+                margin: 10px;
+            }
+            .contenedor__sobre-mi{
+                flex-direction: row;
+                display: flex;
+                margin: 20px;
+                .sobre-mi__textos{
+                    margin: 10px;
+                    padding: 10px;
+                    background: #4645449d;
+                    border: 2px solid $color-pricipal;
+                    &:hover{
+                        transform: scale(1,1.1);
+                        transition: 1s;
+                        box-shadow:$sombras-rojas ;
+                    }
+                }
+                .sobre-mi__textos{
+                    h3{
+                        span{
+                            @include caja-span ($color-pricipal)
+                        }
+                    }
+                }
+            }
+        }
+        
+        .proyecto__grid{
+            display: grid;
+            height: 550px;
+            grid-template-areas: 
+            "proyecto-1 proyecto-1 proyecto-2 proyecto-3"
+            "proyecto-1 proyecto-1 proyecto4 proyecto-6";
+            gap: 10px;
+          
+            .proyecto__item{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                &:nth-of-type(1){
+                    grid-area: proyecto-1;
+                }
+                &:nth-of-type(2){
+                    grid-area: proyecto-2;
+                }
+                &:nth-of-type(3){
+                    grid-area: proyecto-3;
+                }
+                &:nth-of-type(4){
+                    grid-area: proyecto4;
+                }
+                &:nth-of-type(5){
+                    grid-area: proyecto-6;
+                }
+            .proyecto__hover{
+                position: absolute;
+                background: #9707da6c;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                color: whitesmoke;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                transform: translate(100%);
+                cursor: pointer;
+                transition: transform .4s ease-in-out;
+                &:hover{
+                    transform:traslate(0%);
+                }
+
+                  }
+                .proyecto__img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    cursor: pointer;
+                  }
+  
+            }
+            
+        }
+               
+        .tecnologias{
+            min-width: 300px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 80px;
+            justify-items: center;
+            align-items: center;
+            .tech__textos{
+                .titulos_tech{
+                    color: $color-pricipal ;
+                    font-size: 40px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                .parrafos__tech{
+                    margin-bottom: 20px;
+                    line-height: 1.5;
+                    font-weight: 300;
+                }
+            }
+            .img__tech{
+                text-align: center;
+                .imagen__t{
+                    max-width: 80%;
+                }
+            }
+            .img__tech--left{
+                text-align: left;
+            } 
+        }
+        .recomendaciones__grid{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            .recomendaciones__item{
+                width: 95%;
+                margin: 0 auto;
+                background:  $color-cards;
+                box-shadow: $sombras-rojas;
+                border-radius: 7px;
+                padding: 30px 25px;
+                color: #ffffff;
+                margin-bottom: 50px;
+                &:hover{
+                    transform: scale(1,1.1);
+                    transition: 1s;
+                    box-shadow:$sombra-violetas;
+                    background:$backgound-rojo ;
+                }
+                .recomendaciones__persona{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .recomendaciones__img{
+                        width: 100px;
+                        min-width: 100px;
+                        height: 100px;
+                        object-fit: cover;
+                        border: 3px solid rgb(0, 0, 0);
+                        object-position: top;
+                        border-radius: 50%;
+                        display: block;
+                        border: 3px solid #ffffff;
+                        margin-right: 30px;
+                    }
+                    .recomendaciones__texto{
+                        .recomendaciones__nombre{
+                            color: #ebe99f;
+                            font-size: 1.5rem;
+                            margin-bottom: 10px;
+                        }
+                        .recomendaciones__verificacion{
+                            color: #cfc7c7;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .recomendaciones__review{
+                    font-weight: 300;
+                }
+            }
+        }
+        .card{
+            font-family: $letra_de_pagina;
+            background: $color-cards;
+            box-shadow: 0 8px 10px #c0003093;
+            cursor:pointer;
+            &:hover{
+                transition: 0.7s;
+                background:#c0003093 ;
+                box-shadow: 0 8px 10px $color-cards;
+            }
+        }
+    }
+       
+}

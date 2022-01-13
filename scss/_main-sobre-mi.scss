@@ -1,0 +1,28 @@
+main{
+    .contenedor{
+        .grid__sobre-mi{
+            display: grid;
+            border-radius: 7px;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            column-gap: 10px;
+            row-gap: 10px;
+            .grid__img{
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+            }
+            .sobre-mi-textos{
+                display: grid;
+                width: 100%;
+                height: 100%;
+                border-radius: 7px;
+                background: #ffffff;
+                color:black;
+            }
+        }
+    }
+}

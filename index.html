@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="">
+    <meta name="keywords" content="">
     <title>JDev</title>
     <link rel="shortcut icon" href="img/Letter_J_violet_34965.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -21,10 +23,10 @@
     <header class="hero">      
         <nav class="nav">
             <a href="index.html" class="nav__items">Inicio</a>
-            <a href="./htmls/sobre-mi.html" class="nav__items">Sobre Mi</a>
-            <a href="./htmls/proyectos.html" class="nav__items">Proyecto</a>
-            <a href="./htmls/servicios.html" class="nav__items">Servicios</a>
-            <a href="./htmls/contacto.html" class="nav__items nav__items--boton">Contactarme</a>             
+            <a href="./html/sobre-mi.html" class="nav__items">Sobre Mi</a>
+            <a href="./html/proyectos.html" class="nav__items">Proyecto</a>
+            <a href="./html/servicios.html" class="nav__items">Servicios</a>
+            <a href="./html/contacto.html" class=" nav__items--boton">Contactarme</a>             
         </nav>
         <div class="titulo">   
             <h1 class="animate__animated animate__backInRight">
@@ -38,62 +40,66 @@
     </header>
 
     <main>
-        <section class="contenedor sobre-mi">
+        <section class="contenedor ">
             <h2 class="sub-titulo">Sobre Mi </h2>
-            <img src="img/sobre-mi.png" class=" sobre-mi__img" alt="yo">
-            <div class="sobre-mi contenedor__sobre-mi ">  
-                <div class="sobre-mi sobre-mi__textos">
-                    <h3><span>1</span>Biografia</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero qui distinctio impedit laudantium libero? Et, quo. Temporibus ad soluta exercitationem autem accusantium laudantium earum? Reiciendis repellat eligendi magnam culpa quis?</p>
+            <div class="sobre-mi">
+                <img src="img/sobre-mi.png" class=" sobre-mi__img" alt="yo">
+                <div class="sobre-mi contenedor__sobre-mi ">  
+                    <div class="sobre-mi sobre-mi__textos">
+                        <h3><span>1</span>Biografia</h3>
+                        <p>!Hola¡ mi nombre es Joaquin Andres Toledo, soy de Rio Gallegos, Santa Cruz ,Argentina
+                            me dedico al diseño web y esta es mi pagina.
+                        </p>
+                    </div>
+                    <div class="sobre-mi sobre-mi__textos ">
+                        <h3><span>2</span>Experiencia y cursos</h3>
+                        <p>
+                            Soy estudiantes de CoderHose y ya tengo varios proyectos de diseño web que los podras ver clikiando aqui <a href="./html/proyectos.html">"Proyecto"</a>                   
+                        </p>
+                    </div>      
                 </div>
-                <div class="sobre-mi sobre-mi__textos ">
-                    <h3><span>2</span>Experiencia y cursos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero qui distinctio impedit laudantium libero? Et, quo. Temporibus ad soluta exercitationem autem accusantium laudantium earum? Reiciendis repellat eligendi magnam culpa quis?</p>
-                </div>      
-            </div>
+           </div>
         </section>
 
 
-        <section class="proyecto">
-            <div class="contenedor">
-                <h2 class="sub-titulo">Mis proyectos</h2>
-                <div class="proyecto__grid">
-                    <article class="proyecto__item">
-                        <img src="img/proyecto-1.png" alt="pagina-web" class="proyecto__img">
-                        <div class="proyecto__hover">
-                            <h2 class="proyecto__titulo">Sitio web💻</h2>
-                            <i class="far fa-file-alt proyecto__icon" ></i>
-                        </div>
-                    </article>
-                    <article class="proyecto__item">
-                        <img src="img/proyecto-2.jpg" alt="galeria" class="proyecto__img">
-                        <div class="proyecto__hover">
-                            <h2 class="proyecto__titulo">Galeria de fotos📷</h2>
-                            <i class="far fa-file-alt proyecto__icon" ></i>
-                        </div>
-                    </article>
-                    <article class="proyecto__item">
-                        <img src="img/proyecto-3.jpg" alt="barberia" class="proyecto__img">
-                        <div class="proyecto__hover">
-                            <h2 class="proyecto__titulo">Barberia ✂</h2>
-                            <i class="far fa-file-alt proyecto__icon" ></i>
-                        </div>
-                    </article>
-                    <article class="proyecto__item">
-                        <img src="img/proyecto4.jpg" alt="cine" class="proyecto__img">
-                        <div class="proyecto__hover">
-                            <h2 class="proyecto__titulo">cartelera de cine 🎬🎥</h2>
-                            <i class="far fa-file-alt proyecto__icon" ></i>
-                        </div>
-                    </article>
-                    <article class="proyecto__item">
-                        <img src="img/proyecto-6.jpg" alt="cafeteria" class="proyecto__img">
-                        <div class="proyecto__hover">
-                            <h2 class="proyecto__titulo">Cafeteria☕</h2>
-                            <i class="far fa-file-alt proyecto__icon" ></i>
-                        </div>
-                    </article>
-                </div>
+        <section class="contenedor">
+            <h2 class="sub-titulo">Mis proyectos</h2>             
+            <div class="proyecto__grid">
+                <article class="proyecto__item">
+                    <img src="img/proyecto-1.png" alt="pagina-web" class="proyecto__img">
+                    <div class="proyecto__hover">
+                        <h2 class="proyecto__titulo">Sitio web💻</h2>
+                        <i class="far fa-file-alt proyecto__icon" ></i>
+                    </div>
+                </article>
+                <article class="proyecto__item">
+                    <img src="img/proyecto-2.jpg" alt="galeria" class="proyecto__img">
+                    <div class="proyecto__hover">
+                        <h2 class="proyecto__titulo">Galeria de fotos📷</h2>
+                        <i class="far fa-file-alt proyecto__icon" ></i>
+                    </div>
+                </article>
+                <article class="proyecto__item">
+                    <img src="img/proyecto-3.jpg" alt="barberia" class="proyecto__img">
+                    <div class="proyecto__hover">
+                        <h2 class="proyecto__titulo">Barberia ✂</h2>
+                        <i class="far fa-file-alt proyecto__icon" ></i>
+                    </div>
+                </article>
+                <article class="proyecto__item">
+                    <img src="img/proyecto4.jpg" alt="cine" class="proyecto__img">
+                    <div class="proyecto__hover">
+                        <h2 class="proyecto__titulo">cartelera de cine 🎬🎥</h2>
+                        <i class="far fa-file-alt proyecto__icon" ></i>
+                    </div>
+                </article>
+                <article class="proyecto__item">
+                    <img src="img/proyecto-6.jpg" alt="cafeteria" class="proyecto__img">
+                    <div class="proyecto__hover">
+                        <h2 class="proyecto__titulo">Cafeteria☕</h2>
+                        <i class="far fa-file-alt proyecto__icon" ></i>
+                    </div>
+                </article>
             </div>
         </section>
 
@@ -102,7 +108,9 @@
             <div class="tecnologias">
                 <div class="tech__textos">
                     <h3 class="titulos_tech">Html</h3>
-                    <p class="parrafos__tech">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laborum, itaque officiis repellendus eum sequi dolor! Voluptate atque doloremque quaerat, sapiente unde, voluptatum odio voluptas nobis molestias tempore recusandae enim!</p>
+                    <p class="parrafos__tech">HTML es un lenguaje de marcado que nos permite indicar la estructura de nuestro documento mediante etiquetas. Este lenguaje nos ofrece una gran adaptabilidad, una estructuración lógica y es fácil de interpre­tar tanto por humanos como por máquinas.
+                        con este lenguaje se hara la estructura esqueletica de su pagina.
+                    </p>
                 </div>
                 <div class="img__tech">
                     <img src="img/html5.jpg" alt="html" class="imagen__t">
@@ -161,7 +169,8 @@
                             <p class="recomendaciones__verificacion">Empresa</p>
                         </div>
                     </div>
-                    <p class="recomendaciones__review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi aperiam praesentium voluptatibus quasi laboriosam nesciunt nobis doloremque, consectetur provident cupiditate.</p>
+                    <p class="recomendaciones__review">"Gracias a la pagina web de "JDev" pude sacar mi empresa a las redes y abarcar mas mercado."                     
+                    </p>
                 </article>
                 <article class="recomendaciones__item">
                     <div class="recomendaciones__persona">
@@ -171,7 +180,10 @@
                             <p class="recomendaciones__verificacion">Jefa de Marketing</p>
                         </div>
                     </div>
-                    <p class="recomendaciones__review">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi aperiam praesentium voluptatibus quasi laboriosam nesciunt nobis doloremque, consectetur provident cupiditate.</p>
+                    <p class="recomendaciones__review">"Al principio tenia dudas de sacar mi marca al internet 
+                        pero cuando lo hize mis ventas aumentaron considerablemente gracias al diseño de "JDev" la verdad
+                        estoy muy agradecida. "
+                    </p>
                 </article>
             </div>          
         </section>
@@ -182,8 +194,8 @@
                 <div class="card h-100">
                     <img src="img/servicios-it-1.jpg" class="card-img-top" alt="servicios">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title">mantenimiento web</h5>
+                    <p class="card-text">Optimizamos su pagina web para que sea mas dinamica y se sienta mas fluida. </p>
                     </div>
                 </div>
                 </div>
@@ -191,8 +203,8 @@
                 <div class="card h-100">
                     <img src="img/servicios-it-2.jpg" class="card-img-top" alt="servicios">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a short card.</p>
+                    <h5 class="card-title">posicionamiento web</h5>
+                    <p class="card-text">Manejaremos el CEO de su pagina para que sea de las primeras en salir en el buscador.</p>
                     </div>
                 </div>
                 </div>
@@ -200,8 +212,8 @@
                 <div class="card h-100">
                     <img src="img/servicios-it-3.jpg" class="card-img-top" alt="servicios">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    <h5 class="card-title">Diseño web</h5>
+                    <p class="card-text">Diseñamos de una forma prolija su pagina web para que los clientes la consuman y esten a gusto con ella .</p>
                     </div>
                 </div>
                 </div>
@@ -212,11 +224,11 @@
 
     <footer>
        <div class="contenedor footer">       
-            <a class="footer__items" href="#">Instagram</a>
-            <a class="footer__items" href="#">Facebook</a>
-            <a class="footer__items" href="#">Gmail</a>
+            <a class="footer__items" href="https://www.instagram.com/joaquinxtx/">Instagram</a>
+            <a class="footer__items" href="https://www.facebook.com/joaquina.toledo.90/">Facebook</a>
+            <a class="footer__items" href="https://myaccount.google.com/?tab=kk">Gmail</a>
             <a class="footer__items" href="#">Linkedin</a>
-            <a class="footer__items" href="#">GitHub</a>    
+            <a class="footer__items" href="https://github.com/joaquinxtx">GitHub</a>    
        </div>
        <p class="pie">Joaquin dev | Joaquin toledo </p>
     </footer>

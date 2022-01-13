@@ -1,0 +1,24 @@
+main{
+    .contenedor{
+        .contenedor-servicios{
+            display: flex;
+            justify-content: space-evenly;
+            color: whitesmoke;
+            margin: 20px;
+            .img__servicios{
+                width: 48%;
+            }
+            .contenidos-textos{
+                width: 48%;
+                h3{
+                    margin-bottom: 15px;
+                    padding: 5px;
+                    span{
+                        @include caja-span ($color-pricipal)
+                    }
+                }
+            }
+        }
+        
+    }
+}

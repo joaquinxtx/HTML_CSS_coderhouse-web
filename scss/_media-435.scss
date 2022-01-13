@@ -1,0 +1,25 @@
+$vista:mobile;
+body{
+    @if $vista == mobile {
+        @media only screen and (max-width:435px){
+            header{
+                nav{
+                    height: 100px;
+                    .nav__items{
+                        font-weight: 400;
+                        border-bottom: 1px solid #ffff;
+                        margin-right: 0;
+                    }
+                    .nav__items--boton{
+                        border-bottom: $color-pricipal;
+                    }                
+                }       
+            }
+            
+                .contenedor{
+                    padding: 20px;
+                }
+        }
+
+    }
+}

@@ -1,0 +1,25 @@
+main{
+    .contenedor{
+        .accordion{
+            .accordion-body{
+                background: $color-pricipal ;
+              }
+              .accordion-item{
+                background:$color-pricipal;
+              
+              }
+              .accordion-button{
+                background:$color-pricipal;
+                color: cornsilk;
+              }
+        }
+        .card{
+            border-radius: 10px;
+            min-height: 150px;
+            padding: 20px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+}

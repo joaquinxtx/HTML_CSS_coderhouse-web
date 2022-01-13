@@ -1,0 +1,20 @@
+$color-pricipal:#790cd3;
+$hover-subtitulo: #cc00ff6c;
+$letra_de_pagina:'Alegreya Sans', sans-serif;
+$sombras-rojas: 0 0 20px #c0003093;
+$sombra-violetas: 0 0 20px 0 #8a12ec93;
+$color-cards: #6300c0a4;
+$backgound-rojo:#c0003093;
+
+@mixin caja-span ($color) {
+    background:$color;
+    color: whitesmoke;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: black;
+    margin-right: 5px;    
+}

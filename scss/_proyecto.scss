@@ -1,0 +1,33 @@
+main{
+    .contenedor{
+        .proyectos2{
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            gap: 20px;
+            .contenedor-proyectos{
+                display: grid;
+                grid-template-rows:  1fr * 5;
+                gap: 20px;
+                .card{
+                    border-radius: 10px;
+                    min-height: 200px;
+                    padding: 20px;
+                    overflow: hidden;
+                    background-size: cover;
+                    background-position: center center;
+                }
+                .card-boton{
+                    border-radius: 18px;
+                    padding: 20px;
+                    overflow: hidden;
+                    .btn-group{
+                        background-color: aliceblue;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
