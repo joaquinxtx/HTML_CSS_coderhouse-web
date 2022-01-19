@@ -37,6 +37,10 @@ body header nav .nav__items, body header nav .nav__items--boton {
   font-weight: inherit;
 }
 
+body header nav .nav__items:hover, body header nav .nav__items--boton:hover {
+  color: #790cd3;
+}
+
 body header nav .nav__items--boton {
   border: 1px solid #790cd3;
 }
@@ -54,11 +58,11 @@ main .contenedor .accordion .accordion-body {
 }
 
 main .contenedor .accordion .accordion-item {
-  background: #790cd3;
+  background: #6300c0a4;
 }
 
 main .contenedor .accordion .accordion-button {
-  background: #790cd3;
+  background: #6300c0a4;
   color: cornsilk;
 }
 
@@ -159,8 +163,7 @@ main .contenedor .proyecto__grid {
   display: -ms-grid;
   display: grid;
   height: 550px;
-      grid-template-areas: "proyecto-1 proyecto-1 proyecto-2 proyecto-3"
- "proyecto-1 proyecto-1 proyecto4 proyecto-6";
+      grid-template-areas: "proyecto-1 proyecto-1 proyecto-2 proyecto-3" "proyecto-1 proyecto-1 proyecto4 proyecto-6";
   gap: 10px;
 }
 
@@ -169,6 +172,11 @@ main .contenedor .proyecto__grid .proyecto__item {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+main .contenedor .proyecto__grid .proyecto__item:hover {
+  -webkit-transform: translate(0%);
+          transform: translate(0%);
 }
 
 main .contenedor .proyecto__grid .proyecto__item:nth-of-type(1) {
@@ -203,7 +211,16 @@ main .contenedor .proyecto__grid .proyecto__item:nth-of-type(5) {
   grid-area: proyecto-6;
 }
 
+main .contenedor .proyecto__grid .proyecto__item .proyecto__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
 main .contenedor .proyecto__grid .proyecto__item .proyecto__hover {
+  font-weight: 600;
   position: absolute;
   background: #9707da6c;
   top: 0;
@@ -222,26 +239,18 @@ main .contenedor .proyecto__grid .proyecto__item .proyecto__hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transform: translate(100%);
-          transform: translate(100%);
   cursor: pointer;
-  -webkit-transition: -webkit-transform .4s ease-in-out;
-  transition: -webkit-transform .4s ease-in-out;
-  transition: transform .4s ease-in-out;
-  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+  -webkit-transition: -webkit-transform .7s ease-in-out;
+  transition: -webkit-transform .7s ease-in-out;
+  transition: transform .7s ease-in-out;
+  transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
 }
 
 main .contenedor .proyecto__grid .proyecto__item .proyecto__hover:hover {
-  -webkit-transform: traslate(0%);
-          transform: traslate(0%);
-}
-
-main .contenedor .proyecto__grid .proyecto__item .proyecto__img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  cursor: pointer;
+  -webkit-transform: translate(0%);
+          transform: translate(0%);
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
 }
 
 main .contenedor .tecnologias {
@@ -308,8 +317,8 @@ main .contenedor .recomendaciones__grid .recomendaciones__item:hover {
           transform: scale(1, 1.1);
   -webkit-transition: 1s;
   transition: 1s;
-  -webkit-box-shadow: 0 0 20px 0 #8a12ec93;
-          box-shadow: 0 0 20px 0 #8a12ec93;
+  -webkit-box-shadow: 0 0 20px #8a12ec93;
+          box-shadow: 0 0 20px #8a12ec93;
   background: #c0003093;
 }
 
@@ -389,6 +398,13 @@ main .contenedor .grid__sobre-mi {
 
 main .contenedor .grid__sobre-mi .grid__img {
   width: 50%;
+  -webkit-box-shadow: 0 0 20px #8a12ec93;
+          box-shadow: 0 0 20px #8a12ec93;
+}
+
+main .contenedor .grid__sobre-mi .grid__img:hover {
+  -webkit-box-shadow: 0 0 20px #c0003093;
+          box-shadow: 0 0 20px #c0003093;
 }
 
 main .contenedor .grid__sobre-mi .grid__img img {
@@ -401,8 +417,7 @@ main .contenedor .grid__sobre-mi .sobre-mi-textos {
   width: 100%;
   height: 100%;
   border-radius: 7px;
-  background: #ffffff;
-  color: black;
+  color: aliceblue;
 }
 
 main .contenedor .proyectos2 {
@@ -486,8 +501,8 @@ main .contenedor .titulo-form .contacto__titulo {
   margin-top: 0;
   margin-bottom: 20px;
   background-color: #3b3b3b;
-  -webkit-box-shadow: 0 0 20px 0 0 0 20px 0 #8a12ec93;
-          box-shadow: 0 0 20px 0 0 0 20px 0 #8a12ec93;
+  -webkit-box-shadow: 0 0 20px #8a12ec93;
+          box-shadow: 0 0 20px #8a12ec93;
 }
 
 main .contenedor .titulo-form .contacto__titulo span {
@@ -495,8 +510,8 @@ main .contenedor .titulo-form .contacto__titulo span {
 }
 
 main .contenedor .contacto-form {
-  -webkit-box-shadow: 0 0 20px 0 0 0 20px 0 #8a12ec93;
-          box-shadow: 0 0 20px 0 0 0 20px 0 #8a12ec93;
+  -webkit-box-shadow: 0 0 20px #8a12ec93;
+          box-shadow: 0 0 20px #8a12ec93;
 }
 
 main .contenedor .contacto-form * {
@@ -536,6 +551,11 @@ main .contenedor .contacto-form .contacto-form__formulario form input, main .con
   color: #f7f7f7;
 }
 
+main .contenedor .contacto-form .contacto-form__formulario form input:focus, main .contenedor .contacto-form .contacto-form__formulario form button:focus, main .contenedor .contacto-form .contacto-form__formulario form textarea:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(139, 10, 214, 0.521)));
+  background: linear-gradient(to bottom, transparent, rgba(139, 10, 214, 0.521));
+}
+
 main .contenedor .contacto-form .contacto-form__formulario form button {
   background: #790cd3;
   text-transform: uppercase;
@@ -549,7 +569,7 @@ main .contenedor .contacto-form .contacto-form__formulario form button:hover:foc
 
 footer {
   border-top: 1px solid #790cd3;
-  background: rgba(121, 12, 211, 0.644);
+  background: #790cd3a4;
 }
 
 footer .contenedor {
@@ -624,9 +644,7 @@ footer .footer .pie {
             align-items: center;
   }
   body main .contenedor .proyecto__grid {
-        grid-template-areas: "proyecto-1 proyecto-1 proyecto-2 proyecto-2"
- "proyecto-1 proyecto-1 proyecto-3 proyecto-3"
- "proyecto4 proyecto4 proyecto-6 proyecto-6";
+        grid-template-areas: "proyecto-1 proyecto-1 proyecto-2 proyecto-2" "proyecto-1 proyecto-1 proyecto-3 proyecto-3" "proyecto4 proyecto4 proyecto-6 proyecto-6";
   }
   body main .contenedor .tecnologias {
     -ms-grid-columns: 1fr;

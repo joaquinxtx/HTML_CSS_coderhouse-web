@@ -22,7 +22,10 @@ body{
                 text-decoration: none;
                 margin-right: 30px;
                 padding: 10px 15px;
-                font-weight: inherit
+                font-weight: inherit;
+                &:hover{
+                    color: $color-pricipal;
+                }
             }
             .nav__items--boton{
                 @extend .nav__items;

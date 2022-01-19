@@ -1,0 +1,18 @@
+#trabajo de sass 
+-hize un mixin lo inclui en _main.scss
+-luego use variables de colores y de sobra que las use en todas las paginas 
+-en el header use un extend para el boton que queria distinto 
+
+#proyecto tercera entrega 
+-rellene los lorem 
+- hover distinto en el _main
+-le puse un focus lindo a la parte del formulario en contactame 
+(lo unico que voy a cambiar para la entrega finial va a ser la pagina de "Proyecto" que no me gusta como quedo y voy a linkear algunos sectores de la pagina  el resto si esta bien lo voy a dejar asi)
+
+#seo 
+-use las etiquetas semanticas 
+-las etiquetas meta en el head 
+-carpetas ordenadas 
+-css prolijo 
+-etiqueta "alt" en las imagenes .
+

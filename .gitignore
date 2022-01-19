@@ -8,6 +8,11 @@
 #script
 .script.txt
 
+#normalize 
+.css/normalize.css
+.css/styles.css.map
+
+
 cosas/node_modules/.package-lock.json
 cosas/node_modules/.bin/color-support
 cosas/node_modules/.bin/color-support.cmd
