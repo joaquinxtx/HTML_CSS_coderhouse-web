@@ -16,3 +16,10 @@
 -css prolijo 
 -etiqueta "alt" en las imagenes .
 
+#cosas a recalcar :
+En la parte de "proyectos" solo te redirije a mi github , los proyectos no son reales lo hize tipo simulacion .
+
+
+#de que se trata mi proyecto 
+mi proyecto se trata de un sitio para contratar mis servicios ,obvio todo simulacion .
+

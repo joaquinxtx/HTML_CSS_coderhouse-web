@@ -18,15 +18,17 @@ main{
                     background-size: cover;
                     background-position: center center;
                 }
-                .card-boton{
-                    border-radius: 18px;
-                    padding: 20px;
-                    overflow: hidden;
-                    .btn-group{
-                        background-color: aliceblue;
-                        color: black;
+                button{
+                    width: 100%;
+                    background: $color-pricipal;
+                    color:white;
+                    text-transform: uppercase;
+                    padding: 1em;
+                    &:hover:focus{
+                        background-color: rgb(99, 0, 192);
+                        color: cornsilk;
                     }
-                }
+               }
             }
         }
     }

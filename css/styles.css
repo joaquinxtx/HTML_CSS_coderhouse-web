@@ -446,15 +446,17 @@ main .contenedor .proyectos2 .contenedor-proyectos .card {
   background-position: center center;
 }
 
-main .contenedor .proyectos2 .contenedor-proyectos .card-boton {
-  border-radius: 18px;
-  padding: 20px;
-  overflow: hidden;
+main .contenedor .proyectos2 .contenedor-proyectos button {
+  width: 100%;
+  background: #790cd3;
+  color: white;
+  text-transform: uppercase;
+  padding: 1em;
 }
 
-main .contenedor .proyectos2 .contenedor-proyectos .card-boton .btn-group {
-  background-color: aliceblue;
-  color: black;
+main .contenedor .proyectos2 .contenedor-proyectos button:hover:focus {
+  background-color: #6300c0;
+  color: cornsilk;
 }
 
 main .contenedor .contenedor-servicios {
